@@ -12,6 +12,8 @@
 
                     <form method="GET" action="{{ route('books.index') }}"
                         class="mb-4 flex items-center space-x-2">
+                        @csrf
+
                         <input type="text" name="title" placeholder="Search by title"
                             value="{{ request('title') }}" class="input h-10" />
                         <input type="hidden" name="filter" value="{{ request('filter') }}" />
