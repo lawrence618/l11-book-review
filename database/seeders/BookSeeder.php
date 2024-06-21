@@ -14,7 +14,7 @@ class BookSeeder extends Seeder
      */
     public function run(): void
     {
-        Book::factory(50)->create()->each(function ($book) {
+        Book::factory(34)->create()->each(function ($book) {
                 $numReviews = random_int(5, 30);
 
                 Review::factory()->count($numReviews)
@@ -23,7 +23,7 @@ class BookSeeder extends Seeder
                     ->create();
         });
         
-        Book::factory(50)->create()->each(function ($book) {
+        Book::factory(34)->create()->each(function ($book) {
                 $numReviews = random_int(5, 30);
 
                 Review::factory()->count($numReviews)
@@ -32,7 +32,7 @@ class BookSeeder extends Seeder
                     ->create();
         });
         
-        Book::factory(50)->create()->each(function ($book) {
+        Book::factory(35)->create()->each(function ($book) {
                 $numReviews = random_int(5, 30);
 
                 Review::factory()->count($numReviews)
